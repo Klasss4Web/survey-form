@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Second Project
+        </title>
+        <style>
+            body{
+                background-color: lightslategray;
+            }
+            .button{
+                background-color: orange;
+            }
+            .height{
+                height: 200px; width: 200px;
+            }
+            @media(max-width: 767px){
+                body{font-size: 70%;} 
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This survey form is aimed at collecting data for analysis on the impact of Covid 19 on small scale businesses</p>
+        </header>
+        <section>
+            <form id="survey-form" action="">
+                <p>Please enter your full name in the text field below</p>
+                <label for="name" id="name-label">Name:</label><br>
+                <input id="name" type="text" placeholder="enter your name" name="name" required >
+                <input type="submit" name="submit" value="submit" class="button">
+                <p>please enter a valid email address in the field below</p>
+                <label for="email" id="email-lael">Email:</label><br>
+                <input type="email" id="email" required placeholder="email" name="email" pattern="/^[a-zA-Z0-9. !#$%&'*+/=?^_'{1}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                <input type="submit" name="submit" value="submit" class="button">
+                <p>please enter a valid phone number in the field below</p>
+                <label for="number" id="number-label">phone number:</label><br>
+                <input id="number" type="text" pattern="[0-9]{8,12}" placeholder="0-9" name="number" required>
+                <input type="submit" name="submit" value="submit" class="button">
+                <p>please enter a date</p>
+                <label for="date" id="dropdown">pick a date:</label><br>
+                <input type="date" id="pickdate" name="date">
+                <input type="submit" name="submit" value="submit" class="button">
+                <fieldset>
+                    <legend>what is the size of your business?</legend>
+                    <input type="radio" name="size" value="small" id="small">
+                    <label for="small">1 - 4 staff</label><br>
+                    <input type="radio" name="size" value="medium" id="medium">
+                    <label for="medium">5 - 9 staff</label><br>
+                    <input type="radio" name="size" value="large" id="large scale">
+                    <label for="large scale">10 - 15 staff</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>did you lay off any of your staff due to the impact of Covid 19 on your business?</legend>
+                    <input type="radio" id="yes" name="staff layoff" value="yes">
+                    <label for="yes">yes</label><br>
+                    <input type="radio" name="staff layoff" id="no" value="no">
+                    <label for="no">no</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>did the government give you any bailout?</legend>
+                    <input type="radio" name="bailout" id="yes" value="yes">
+                    <label for="yes">yes</label>
+                    <input type="radio" name="bailout" id="no" value="no">
+                    <label for="no">no</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>what kind of services/products does your establishment renders? please select as many option as applicable</legend>
+                    <input type="checkbox" name="product" id="food" value="food">
+                    <label for="food">foodstuff</label><br>
+                    <input type="checkbox" name="product" id="sanitary" value="sanitary">
+                    <label for="sanitary">sanitary materials</label><br>
+                    <input type="checkbox" name="product" id="clothings" value="clothings">
+                    <label for="clothings">clothings</label><br>
+                    <input type="checkbox" name="product" id="restaurant" value="restaurant">
+                    <label for="restaurant">restaurant</label>
+                </fieldset>
+                <fieldset>
+                    <label for="textfield">text</label><br>   
+                    <input class="height" type="text" id="textfield" placeholder="type in any additional information">
+                </fieldset>
+                <input class="button" type="submit" id="submit">
+            </form>
+        </section>
+    </body>
+</html>
