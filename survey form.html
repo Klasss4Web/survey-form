@@ -2,9 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            My Second Project
-        </title>
+        <title>Survey Form</title>
         <style>
             body{
                 background-color: lightslategray;
@@ -12,11 +10,12 @@
             .button{
                 background-color: orange;
             }
+            
             .height{
                 height: 200px; width: 200px;
             }
             @media(max-width: 767px){
-                body{font-size: 70%;} 
+                body{font-size: 100%;} 
             }
         </style>
     </head>
@@ -33,11 +32,11 @@
                 <input type="submit" name="submit" value="submit" class="button">
                 <p>please enter a valid email address in the field below</p>
                 <label for="email" id="email-lael">Email:</label><br>
-                <input type="email" id="email" required placeholder="email" name="email" pattern="/^[a-zA-Z0-9. !#$%&'*+/=?^_'{1}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                <input type="email" id="email" required placeholder="email" name="email" pattern="[a-zA-Z0-9. !#$%&'*+/=?^_'{1}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)">
                 <input type="submit" name="submit" value="submit" class="button">
                 <p>please enter a valid phone number in the field below</p>
                 <label for="number" id="number-label">phone number:</label><br>
-                <input id="number" type="text" pattern="[0-9]{8,12}" placeholder="0-9" name="number" required>
+                <input id="number" type="number" pattern="[0-9]{8,12}" placeholder="9-12" name="number" required>
                 <input type="submit" name="submit" value="submit" class="button">
                 <p>please enter a date</p>
                 <label for="date" id="dropdown">pick a date:</label><br>
@@ -79,7 +78,7 @@
                 </fieldset>
                 <fieldset>
                     <label for="textfield">text</label><br>   
-                    <input class="height" type="text" id="textfield" placeholder="type in any additional information">
+                    <textarea name = "textfield" rows = "10" columns = "40" id="textfield" placeholder="type in any additional information"></textarea>
                 </fieldset>
                 <input class="button" type="submit" id="submit">
             </form>
