@@ -1,0 +1,13 @@
+body{
+    background-color: lightslategray;
+}
+.button{
+    background-color: orange;
+}
+
+.height{
+    height: 200px; width: 200px;
+}
+@media(max-width: 767px){
+    body{font-size: 100%;} 
+}
